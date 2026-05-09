@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim | Urban Jungle</title>
+    <link rel="stylesheet" href="css/stylePlant.css">
+    <style>
+        .cart-container { max-width: 800px; margin: 50px auto; padding: 20px; }
+        .cart-item { 
+            display: flex; align-items: center; justify-content: space-between;
+            background: #fff; padding: 15px; border-radius: 10px; margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .cart-item img { width: 80px; height: 80px; object-fit: cover; border-radius: 5px; }
+        .cart-details { flex: 1; margin-left: 20px; }
+        .cart-total { text-align: right; font-size: 1.2rem; font-weight: bold; margin-top: 20px; }
+        .btn-remove { color: #ff4d4d; cursor: pointer; border: none; background: none; font-weight: 600; }
+        .empty-msg { text-align: center; color: #888; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Urban Jungle 🌿</div>
+        <ul class="nav-links">
+            <li><a href="indexplant.html">Ana Sayfa</a></li>
+            <li><a href="plants.html">Bitkiler</a></li>
+            <li class="cart-nav"><a href="cart.html" class="cart-link">Sepetim 🛒 <span id="cart-badge" class="badge">0</span></a></li>
+            <li><a href="guide.html">Bakım Rehberi</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main class="cart-container">
+        <h1>Alışveriş Sepetim</h1>
+        <!-- Geri Dön Butonu -->
+        <div class="back-nav" style="text-align: left; margin-bottom: 20px;">
+            <a href="indexplant.html" class="back-link">
+                <span class="arrow">←</span> Ana Sayfaya Dön
+            </a>
+        </div>
+        <div id="cart-list">
+            <!-- Ürünler buraya JS ile gelecek -->
+        </div>
+        <div class="cart-total" id="cart-total-price">Toplam: 0 TL</div>
+        <button class="btn-main" style="margin-top: 20px;">Ödemeye Geç</button>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

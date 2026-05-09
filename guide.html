@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakım Rehberi | Urban Jungle</title>
+    <link rel="stylesheet" href="css/stylePlant.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Urban Jungle 🌿</div>
+        <ul class="nav-links">
+            <li><a href="indexplant.html">Ana Sayfa</a></li>
+            <li><a href="plants.html">Bitkiler</a></li>
+            <li class="cart-nav"><a href="cart.html" class="cart-link">Sepetim 🛒 <span id="cart-badge" class="badge">0</span></a></li>
+            <li><a href="guide.html" class="active">Bakım Rehberi</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- GUIDE LAYOUT -->
+    <main class="guide-container">
+        <!-- Geri Dön Butonu -->
+        <div class="back-nav" style="width: 100%; margin-bottom: 30px;">
+            <a href="indexplant.html" class="back-link">
+                <span class="arrow">←</span> Ana Sayfaya Dön
+            </a>
+        </div>
+        <!-- SOL SIDEBAR (Sabit Menü) -->
+        <aside class="guide-sidebar">
+            <h3>Bitki Listesi</h3>
+            <ul>
+                <li><a href="#monstera" class="nav-link active">Deve Tabanı</a></li>
+                <li><a href="#pasakilici" class="nav-link">Paşa Kılıcı</a></li>
+                <li><a href="#pothos" class="nav-link">Salon Sarmaşığı</a></li>
+                <li><a href="#aloe" class="nav-link">Aloe Vera</a></li>
+                <li><a href="#kaktus" class="nav-link">Kaktüs</a></li>
+                <li><a href="#orkide" class="nav-link">Orkide</a></li>
+                <li><a href="#kaucuk" class="nav-link">Kauçuk Ağacı</a></li>
+                <li><a href="#ask-merdiveni" class="nav-link">Aşk Merdiveni</a></li>
+            </ul>
+        </aside>
+
+        <!-- SAĞ İÇERİK ALANI -->
+        <section class="guide-content">
+            
+            <!-- Deve Tabanı -->
+            <section id="monstera" class="plant-section">
+                <h2>Deve Tabanı (Monstera) Bakımı</h2>
+                <img src="images/monstera.jpg" alt="Deve Tabanı">
+                <p>Görkemli yapraklarıyla bilinen bu bitki, dolaylı ışığı sever. Toprağı kurudukça sulanmalı, yaprakları nemli bezle silinmelidir.</p>
+            </section>
+
+            <!-- Paşa Kılıcı -->
+            <section id="pasakilici" class="plant-section">
+                <h2>Paşa Kılıcı Bakımı</h2>
+                <img src="images/snake-plant.jpg" alt="Paşa Kılıcı">
+                <p>Oksijen deposudur. Az ışığa çok dayanıklıdır. Ayda bir sulasanız bile hayatta kalabilen çok güçlü bir türdür.</p>
+            </section>
+
+            <!-- Salon Sarmaşığı -->
+            <section id="pothos" class="plant-section">
+                <h2>Salon Sarmaşığı Bakımı</h2>
+                <img src="images/pothos.jpg" alt="Salon Sarmaşığı">
+                <p>Hızlı büyür. Aydınlık ortamları sever ama loş ışığa da uyum sağlar. Dalları uzadıkça şık bir görünüm oluşturur.</p>
+            </section>
+
+            <!-- Aloe Vera -->
+            <section id="aloe" class="plant-section">
+                <h2>Aloe Vera Bakımı</h2>
+                <img src="images/aloe-vera.jpg" alt="Aloe Vera">
+                <p>Güneşli yerleri çok sever. Yapraklarında su depoladığı için sık sulama istemez. Toprağı tamamen kurumadan su vermeyin.</p>
+            </section>
+
+            <!-- Kaktüs -->
+            <section id="kaktus" class="plant-section">
+                <h2>Kaktüs Bakımı</h2>
+                <img src="images/cactus.jpg" alt="Kaktüs">
+                <p>Direkt güneş ışığına bayılırlar. Kışın neredeyse hiç su istemezler, yazın ise toprak kurudukça çok az sulanmalıdırlar.</p>
+            </section>
+
+            <!-- Orkide -->
+            <section id="orkide" class="plant-section">
+                <h2>Orkide Bakımı</h2>
+                <img src="images/orchid.jpg" alt="Orkide">
+                <p>Zarif ama biraz nazlıdır. Şeffaf saksıda köklerinin ışık almasını ister. Haftada bir daldırma yöntemiyle sulanması önerilir.</p>
+            </section>
+
+            <!-- Kauçuk Ağacı -->
+            <section id="kaucuk" class="plant-section">
+                <h2>Kauçuk Ağacı Bakımı</h2>
+                <img src="images/rubber-plant.jpg" alt="Kauçuk Ağacı">
+                <p>Parlak ve koyu yaprakları için aydınlık bir ortam gerekir. Toprağı nemli tutulmalı ancak fazla sudan kaçınılmalıdır.</p>
+            </section>
+
+            <!-- Aşk Merdiveni -->
+            <section id="ask-merdiveni" class="plant-section">
+                <h2>Aşk Merdiveni Bakımı</h2>
+                <img src="images/fern.jpg" alt="Aşk Merdiveni">
+                <p>Nemi çok sever. Direkt güneşten kaçınılmalı, yarı gölge ve nemli ortamlarda (banyolar gibi) harika gelişir.</p>
+            </section>
+
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 40px; background: var(--white);">
+        <p>&copy; 2026 Urban Jungle - Doğayı Evine Taşı</p>
+    </footer>
+
+    <script>
+        // 1. Tıklayınca Pürüzsüz Kaydırma 
+        document.querySelectorAll('.guide-sidebar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 2. Kaydırdıkça Sol Menüyü Otomatik Güncelleme (
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -70% 0px', // Sayfanın ortasına gelince tetiklenir
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                
+                    // Mevcut aktif sınıfını temizle
+                    const currentActive = document.querySelector('.nav-link.active');
+                    if (currentActive) currentActive.classList.remove('active');
+
+                    // Yeni aktif linki işaretle
+                    const nextActive = document.querySelector(`.nav-link[href="#${id}"]`);
+                    if (nextActive) nextActive.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        // Tüm bitki bölümlerini takibe al
+        document.querySelectorAll('.plant-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>

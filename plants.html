@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitki Kataloğu | Urban Jungle</title>
+    <link rel="stylesheet" href="css/stylePlant.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Urban Jungle 🌿</div>
+        <ul class="nav-links">
+            <li><a href="indexplant.html">Ana Sayfa</a></li>
+            <li><a href="plants.html" class="active">Bitkiler</a></li>
+            <li class="cart-nav"><a href="cart.html" class="cart-link">Sepetim 🛒 <span id="cart-badge" class="badge">0</span></a></li>
+            <li><a href="guide.html">Bakım Rehberi</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <!-- KATALOG BAŞLIĞI VE FİLTRELEME -->
+    <section class="plants-container">
+        <!-- Geri Dön Butonu -->
+        <div class="back-nav" style="text-align: left; margin-bottom: 20px;">
+            <a href="indexplant.html" class="back-link">
+                <span class="arrow">←</span> Ana Sayfaya Dön
+            </a>
+        </div>
+        <div class="section-title">
+            <h1>Bitki Koleksiyonumuz</h1>
+            <p>Evinizin her köşesi için özenle seçilmiş sağlıklı bitkiler.</p>
+        </div>
+
+        <!-- Arama ve Filtreleme Alanı -->
+        <div class="shop-controls" style="margin-bottom: 50px;">
+            <div class="filter-menu">
+                <button class="filter-btn active" data-filter="all">Hepsi</button>
+                <button class="filter-btn" data-filter="easy">Kolay Bakım</button>
+                <button class="filter-btn" data-filter="low-light">Az Işık</button>
+                <button class="filter-btn" data-filter="pet-friendly">Evcil Hayvan Dostu</button>
+                <button class="filter-btn" data-filter="populer">Popüler</button>
+                <button class="filter-btn" data-filter="sifalı">Şifalı</button>
+            </div>
+        </div>
+
+        <div class="plant-grid">
+            <!--  Deve Tabanı -->
+            <div class="plant-card" data-category="easy">
+                <div class="plant-badge">Kolay Bakım</div>
+                <img src="images/monstera.jpg" alt="Deve Tabanı">
+                <div class="plant-info">
+                    <h3>Deve Tabanı (Monstera)</h3>
+                    <p>Geniş yapraklarıyla salonunuzun havasını değiştirir.</p>
+                    <div class="plant-footer">
+                        <span class="price">450 TL</span>
+                        <a href="#" class="btn-small">Detayları İncele</a>
+                    </div>
+                    <button class="btn-add-cart" 
+                        data-name="Deve Tabanı" 
+                        data-price="450" 
+                        data-img="images/monstera.jpg"
+                        style="width: 100%; margin-top: 15px;"> 
+                        Sepete Ekle
+                    </button>
+                </div>
+            </div>
+
+            <!--  Paşa Kılıcı -->
+            <div class="plant-card" data-category="low-light">
+                <div class="plant-badge">Az Işık</div>
+                <img src="images/snake-plant.jpg" alt="Paşa Kılıcı">
+                <div class="plant-info">
+                    <h3>Paşa Kılıcı</h3>
+                    <p>Gece boyunca oksijen üreten, dayanıklı bir tür.</p>
+                    <div class="plant-footer">
+                        <span class="price">280 TL</span>
+                        <a href="#" class="btn-small">Detayları İncele</a>
+                    </div>
+                    <button class="btn-add-cart" data-name="Paşa Kılıcı" data-price="280" data-img="images/snake-plant.jpg" style="width: 100%; margin-top: 15px;">Sepete Ekle</button>
+                </div>
+            </div>
+
+            <!--  Salon Sarmaşığı -->
+            <div class="plant-card" data-category="easy">
+                <div class="plant-badge">Popüler</div>
+                <img src="images/pothos.jpg" alt="Salon Sarmaşığı">
+                <div class="plant-info">
+                    <h3>Salon Sarmaşığı</h3>
+                    <p>Hızlı gelişen ve sarkan yapısıyla her yere uyum sağlar.</p>
+                    <div class="plant-footer">
+                        <span class="price">190 TL</span>
+                        <a href="#" class="btn-small">Detayları İncele</a>
+                    </div>
+                    <button class="btn-add-cart" data-name="Salon Sarmaşığı" data-price="190" data-img="images/pothos.jpg" style="width: 100%; margin-top: 15px;">Sepete Ekle</button>
+                </div>
+            </div>
+            
+            <!--  Aloe Vera -->
+            <div class="plant-card" data-category="sifalı">
+                <div class="plant-badge">Şifalı</div>
+                <img src="images/aloe-vera.jpg" alt="Aloe Vera">
+                <div class="plant-info">
+                    <h3>Aloe Vera</h3>
+                    <p>Bakımı en kolay, hem dekoratif hem de faydalı bir ev klasiği.</p>
+                    <div class="plant-footer">
+                        <span class="price">120 TL</span>
+                        <a href="#" class="btn-small">Detayları İncele</a>
+                    </div>
+                    <button class="btn-add-cart" data-name="Aloe Vera" data-price="120" data-img="images/aloe-vera.jpg" style="width: 100%; margin-top: 15px;">Sepete Ekle</button>
+                </div>
+            </div>
+
+            <!--  Kaktüs -->
+            <div class="plant-card" data-category="easy">
+                <div class="plant-badge">Dayanıklı</div>
+                <img src="images/cactus.jpg" alt="Kaktüs">
+                <div class="plant-info">
+                    <h3>Kaktüs</h3>
+                    <p>Su istemeyen, her ortama uyum sağlayan sevimli bir dost.</p>
+                    <div class="plant-footer">
+                        <span class="price">85 TL</span>
+                        <a href="#" class="btn-small">Detayları İncele</a>
+                    </div>
+                    <button class="btn-add-cart" data-name="Kaktüs" data-price="85" data-img="images/cactus.jpg" style="width: 100%; margin-top: 15px;">Sepete Ekle</button>
+                </div>
+            </div>
+
+            <!--  Orkide -->
+            <div class="plant-card" data-category="all">
+                <div class="plant-badge">Bereket</div>
+                <img src="images/orchid.jpg" alt="Orkide">
+                <div class="plant-info">
+                    <h3>Orkide</h3>
+                    <p>Zarafetin simgesi, evinize asalet katacak muhteşem çiçekler.</p>
+                    <div class="plant-footer">
+                        <span class="price">450 TL</span>
+                        <a href="#" class="btn-small">Detayları İncele</a>
+                    </div>
+                    <button class="btn-add-cart" data-name="Orkide" data-price="450" data-img="images/orchid.jpg" style="width: 100%; margin-top: 15px;">Sepete Ekle</button>
+                </div>
+            </div>
+
+            <!-- Kauçuk Ağacı -->
+            <div class="plant-card" data-category="populer">
+                <div class="plant-badge">Popüler</div>
+                <img src="images/rubber-plant.jpg" alt="Kauçuk Ağacı">
+                <div class="plant-info">
+                    <h3>Kauçuk Ağacı</h3>
+                    <p>Koyu ve parlak yapraklarıyla modern dekorasyonun vazgeçilmezi.</p>
+                    <div class="plant-footer">
+                        <span class="price">350 TL</span>
+                        <a href="#" class="btn-small">Detayları İncele</a>
+                    </div>
+                    <button class="btn-add-cart" data-name="Kauçuk Ağacı" data-price="350" data-img="images/rubber-plant.jpg" style="width: 100%; margin-top: 15px;">Sepete Ekle</button>
+                </div>
+            </div>
+            <!-- Aşk Merdiveni -->
+            <div class="plant-card" data-category="sifalı">
+                <div class="plant-badge">Hava Temizleyici</div>
+                <img src="images/fern.jpg" alt="Aşk Merdiveni">
+                <div class="plant-info">
+                    <h3>Aşk Merdiveni</h3>
+                    <p>Evin nem dengesini koruyan, gür yapraklı ve dost canlısı bir bitki.</p>
+                    <div class="plant-footer">
+                        <span class="price">180 TL</span>
+                        <a href="#" class="btn-small">Detayları İncele</a>
+                    </div>
+                    <button class="btn-add-cart" data-name="Aşk Merdiveni" data-price="180" data-img="images/fern.jpg" style="width: 100%; margin-top: 15px;">Sepete Ekle</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="text-align: center; padding: 40px; background: var(--white); margin-top: 50px;">
+        <p>&copy; 2026 Urban Jungle - Doğayı Evine Taşı</p>
+    </footer>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

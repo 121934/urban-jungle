@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Urban Jungle</title>
+    <link rel="stylesheet" href="css/stylePlant.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Urban Jungle 🌿</div>
+        <ul class="nav-links">
+            <li><a href="indexplant.html">Ana Sayfa</a></li>
+            <li><a href="plants.html">Bitkiler</a></li>
+            <li class="cart-nav"><a href="cart.html" class="cart-link">Sepetim 🛒 <span id="cart-badge" class="badge">0</span></a></li>
+            <li><a href="guide.html">Bakım Rehberi</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" class="active">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-container">
+        <div class="back-nav" style="text-align: left; margin-bottom: 20px;">
+            <a href="indexplant.html" class="back-link">
+                <span class="arrow">←</span> Ana Sayfaya Dön
+            </a>
+        </div>
+        <div class="contact-header">
+            <h1>Bize Ulaşın</h1>
+            <p>Bitki bakımı hakkında sorularınız mı var? Bizimle iletişime geçmekten çekinmeyin.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- İletişim Formu -->
+            <div class="contact-form-section">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Adınız</label>
+                        <input type="text" id="name" placeholder="Adınızı giriniz..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-posta Adresiniz</label>
+                        <input type="email" id="email" placeholder="E-posta adresiniz..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mesajınız</label>
+                        <textarea id="message" rows="5" placeholder="Size nasıl yardımcı olabiliriz?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-main">Mesaj Gönder</button>
+                </form>
+            </div>
+
+            <!-- İletişim Bilgileri -->
+            <div class="contact-info-section">
+                <div class="info-item">
+                    <h3>📍 Adres</h3>
+                    <p>Urban Jungle Stüdyosu, İstanbul, Türkiye</p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Telefon</h3>
+                    <p>+90 555 000 00 00</p>
+                </div>
+                <div class="info-item">
+                    <h3>✉️ E-posta</h3>
+                    <p>plant@urbanjungle.com</p>
+                </div>
+                
+                <img src="images/contact.jpg" alt="İletişim Bitkisi" class="contact-img">
+            </div>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 40px; background: var(--white); margin-top: 50px;">
+        <p>&copy; 2026 Urban Jungle - Doğayı Evine Taşı</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
