@@ -543,66 +543,89 @@ body {
     from { opacity: 1; }
     to { opacity: 0; visibility: hidden; }
 }
-/* --- RESPONSIVE (MOBIL UYUM) --- */
-@media (max-width: 992px) {
-    .hero { flex-direction: column; text-align: center; }
-    .hero-image { justify-content: center; margin-top: 40px; }
-    .hero-image img { max-width: 100%; }
-    .guide-container { flex-direction: column; }
-    .navbar { padding: 20px 4%; }
-    .nav-links { gap: 15px; font-size: 14px; }
-}
-/* --- MOBİL BAKIM REHBERİ DÜZENLEME --- */
+/* --- MOBİL UYUMLU TAM DÜZENLEME --- */
 @media (max-width: 768px) {
     
-    .guide-container {
-        flex-direction: column;
-        padding: 0 5%;
-        margin: 20px auto;
+    .hero { 
+        flex-direction: column; 
+        text-align: center; 
+        padding-top: 40px;
+    }
+    .hero-image { justify-content: center; margin-top: 40px; }
+    .hero-image img { max-width: 100%; }
+
+    /* Navigasyon */
+    .navbar { 
+        padding: 15px 4%; 
+        flex-direction: column; 
+        gap: 15px;
+    }
+    .nav-links { 
+        gap: 10px; 
+        font-size: 13px; 
+        flex-wrap: wrap; 
+        justify-content: center; 
     }
 
-    
-    .guide-sidebar {
-        width: 100%;
-        position: relative;
-        top: 0;
-        margin-bottom: 30px;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 20px;
+    /* BAKIM REHBERİ  */
+    .guide-container { 
+        display: flex;
+        flex-direction: column; /* Üst üste binmeyi bitirir */
+        padding: 10px;
+        margin: 10px auto;
     }
+
+    .guide-sidebar { 
+        width: 100% !important; 
+        position: relative !important; 
+        top: 0 !important; 
+        margin-bottom: 20px;
+        border-bottom: 1px solid var(--soft-green);
+        padding-bottom: 15px;
+    }
+
 
     .guide-sidebar ul {
         display: flex;
-        overflow-x: auto; 
-        gap: 15px;
-        padding-bottom: 10px;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
     }
 
-    .guide-sidebar li {
-        margin-bottom: 0; 
+    .guide-sidebar ul li a {
+        background: #f0f0f0;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        border: none;
+    }
+
+    .guide-content { 
+        width: 100% !important; 
+        padding: 0 !important; 
+        box-shadow: none;
+    }
+
+    .guide-article {
+        margin-bottom: 40px;
+    }
+
+    .guide-content img { 
+        width: 100% !important; 
+        max-width: 100% !important; 
+        height: auto !important; 
+        border-radius: 10px;
+        margin: 15px 0 !important;
+    }
+
+    .guide-article h2 {
+        font-size: 22px;
+        text-align: center;
     }
 
     
-    .guide-content {
-        width: 100%;
-        padding: 20px; 
-        box-shadow: none; 
-    }
-
-    
-    .guide-content img {
-        max-width: 100%;
-        width: 100%;
-        margin: 15px 0;
-    }
-
-    .section-title h2, .section-title h1 {
-        font-size: 28px; 
-    }
-
-    .hero-content h1 {
-        font-size: 36px; 
+    .plant-grid {
+        grid-template-columns: 1fr; 
+        justify-items: center;
     }
 }
