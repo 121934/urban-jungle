@@ -552,3 +552,57 @@ body {
     .navbar { padding: 20px 4%; }
     .nav-links { gap: 15px; font-size: 14px; }
 }
+/* --- MOBİL BAKIM REHBERİ DÜZENLEME --- */
+@media (max-width: 768px) {
+    
+    .guide-container {
+        flex-direction: column;
+        padding: 0 5%;
+        margin: 20px auto;
+    }
+
+    
+    .guide-sidebar {
+        width: 100%;
+        position: relative;
+        top: 0;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+    }
+
+    .guide-sidebar ul {
+        display: flex;
+        overflow-x: auto; 
+        gap: 15px;
+        padding-bottom: 10px;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .guide-sidebar li {
+        margin-bottom: 0; 
+    }
+
+    
+    .guide-content {
+        width: 100%;
+        padding: 20px; 
+        box-shadow: none; 
+    }
+
+    
+    .guide-content img {
+        max-width: 100%;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .section-title h2, .section-title h1 {
+        font-size: 28px; 
+    }
+
+    .hero-content h1 {
+        font-size: 36px; 
+    }
+}
